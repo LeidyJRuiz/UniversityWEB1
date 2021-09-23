@@ -61,6 +61,7 @@
     <Compile Include="DTOs\InstructorDTO.cs" />
     <Compile Include="DTOs\MapperConfig.cs" />
     <Compile Include="DTOs\OfficeDTO.cs" />
+    <Compile Include="DTOs\ResponseDTO.cs" />
     <Compile Include="DTOs\StudentDTO.cs" />
     <Compile Include="Models\Course.cs">
       <DependentUpon>UniversityModel.tt</DependentUpon>
@@ -105,6 +106,7 @@
     <Compile Include="Repositories\Implements\GenericRepository.cs" />
     <Compile Include="Repositories\Implements\StudentRepository.cs" />
     <Compile Include="Repositories\IStudentRepository.cs" />
+    <Compile Include="Services\Implements\ApiService %281%29.cs" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="Models\UniversityModel.edmx">

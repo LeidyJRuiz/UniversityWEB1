@@ -1,10 +1,8 @@
-using System.Web.Http;
-using WebActivatorEx;
-using University.API;
 using Swashbuckle.Application;
-using System;
-using System.Xml.XPath;
 using System.IO;
+using System.Web.Http;
+using University.API;
+using WebActivatorEx;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
