@@ -6,7 +6,7 @@ namespace University.BL.DTOs
 {
     public class InstructorDTO
     {
-        [Required(ErrorMessage = "The ID is required")]
+        
         public int ID { get; set; }
 
         [Required(ErrorMessage = "The LastName is required")]
@@ -20,7 +20,10 @@ namespace University.BL.DTOs
 
         [Required(ErrorMessage = "The FullName is required")]
         [JsonProperty("Full Name")]
-        public string FullName { get; set; }
+        public string FullName {
+
+            get { return string.Format("{0}, {1}", LastName, FirstMidName); }
+        }
 
     }
 }
